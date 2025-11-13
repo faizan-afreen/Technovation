@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNovation 2025 - Event Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>TechNovation 2025</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Join the Future of Innovation</h2>
+    <p>Experience the biggest college tech event — Connect, Learn, and Showcase!</p>
+    <button class="btn" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'});">
+      Register Now
+    </button>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About the Event</h2>
+    <p>TechNovation 2025 brings together students to showcase innovative projects, enjoy a food fest, compete in games, and celebrate culture with awards.</p>
+  </section>
+
+  <section id="schedule">
+    <h2 class="section-title">Event Schedule</h2>
+    <div class="schedule">
+      <div class="card">
+        <h3>Day 1</h3>
+        <p>Innovative Projects Presentation & Food Fest</p>
+      </div>
+      <div class="card">
+        <h3>Day 2</h3>
+        <p>Games and Competitions</p>
+      </div>
+      <div class="card">
+        <h3>Day 3</h3>
+        <p>Cultural Fest & Award Ceremony</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers removed as requested -->
+
+  <section id="register">
+    <h2 class="section-title">Register Now</h2>
+    <form id="registerForm">
+      <input type="text" name="name" placeholder="Your Name" required style="padding:0.7rem; width:250px; margin:5px;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding:0.7rem; width:250px; margin:5px;">
+      <br>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    <p class="note">*Your registration will be recorded. No confirmation email will be sent.*</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechNovation | Shree Rama Krishna College of Engineering Science and Management, Satna</p>
+    <p>Presented by: Faizan Ali & Noorjahat Aafreen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

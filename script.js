@@ -5,7 +5,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
   const formData = new FormData(form);
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwph7psJhnMtt7QMVnX87k0Vo4yPmMVy2v7XgU6V5qtSXccCS6PWATH_3KgVi3OtH8qqw/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzQ9TQ6jdeAyd-NwwuGMJdRNzQdE-nbPyhP9bOfHslAVtgMc12sv6FmaD2_vrz6CMIlYA/exec", {
       method: "POST",
       body: formData
     });
@@ -18,3 +18,4 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     alert("❌ Something went wrong. Please try again later.");
   }
 });
+

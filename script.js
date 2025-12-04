@@ -1,4 +1,4 @@
-document.getElementById("registerForm").addEventListener("submit", async function(e){
+document.getElementById("registerForm").addEventListener("submit", async function(e) {
   e.preventDefault();
 
   const form = e.target;
@@ -11,12 +11,24 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     });
 
     if (!response.ok) throw new Error(response.status);
-    alert("✅ Registration recorded. Thank you!");
+
+    showSuccessModal(); // 🌟 Replace alert with modal
     form.reset();
+
   } catch (err) {
     console.error("Error:", err);
-    alert("❌ Something went wrong. Please try again later.");
+    showErrorModal(); // Show error modal instead of alert
   }
 });
 
+function showSuccessModal() {
+  document.getElementById("successModal").style.display = "flex";
+}
 
+function showErrorModal() {
+  document.getElementById("errorModal").style.display = "flex";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}

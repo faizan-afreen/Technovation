@@ -67,16 +67,26 @@
 
   <script src="script.js"></script>
   
-  <div id="successModal" class="modal">
+ <div id="successModal" class="modal">
   <div class="modal-content">
     <h2>✔ Registered Successfully!</h2>
     <p>Thank you for registering.</p>
-    <button onclick="closeModal()">OK</button>
+    <button onclick="closeModal('successModal')">OK</button>
   </div>
 </div>
 
+<div id="errorModal" class="modal">
+  <div class="modal-content">
+    <h2 style="color:red;">❌ Error</h2>
+    <p>Something went wrong. Please try again later.</p>
+    <button onclick="closeModal('errorModal')">OK</button>
+  </div>
+</div>
+
+
 </body>
 </html>
+
 
 
 

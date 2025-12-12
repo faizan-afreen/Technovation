@@ -51,12 +51,17 @@
 
   <section id="register">
     <h2 class="section-title">Register Now</h2>
-    <form id="registerForm" autocomplete="off" onsubmit="event.preventDefault();">
-      <input type="text" name="name" placeholder="Your Name" required style="padding:0.7rem; width:250px; margin:5px;">
-      <input type="email" name="email" placeholder="Your Email" required style="padding:0.7rem; width:250px; margin:5px;">
-      <br>
-      <button class="btn" type="submit">Submit</button>
-    </form>
+    <form id="registerForm" autocomplete="off">
+
+  <!-- Dummy field to block Chrome autofill -->
+  <input type="text" name="fake_user" autocomplete="off" style="display:none">
+
+  <input type="text" name="name" placeholder="Your Name" required autocomplete="off">
+  <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
+  <br>
+  <button class="btn" type="submit">Submit</button>
+</form>
+
   </section>
 
   <footer>
@@ -64,7 +69,7 @@
     <p>Presented by: Faizan Ali & Noorjahat Aafreen</p>
   </footer>
 
- <script src="script.js?v=5"></script>
+ <script src="script.js?v=999"></script>
   
  <div id="successModal" class="modal">
   <div class="modal-content">
@@ -85,6 +90,7 @@
 
 </body>
 </html>
+
 
 
 

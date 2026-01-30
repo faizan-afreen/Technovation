@@ -151,11 +151,17 @@ footer {
 
 .register-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* vertical layout */
   align-items: center;
-  gap: 15px;          /* inputs ke beech space */
+  gap: 15px;
   margin-top: 20px;
-  flex-wrap: wrap;   /* mobile me neeche aa jaye */
+}
+
+/* inputs row */
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .register-form input {
@@ -167,7 +173,7 @@ footer {
 }
 
 .register-form button {
-  padding: 10px 25px;
+  padding: 10px 30px;
   border: none;
   border-radius: 5px;
   background-color: #ff5733;
@@ -179,6 +185,8 @@ footer {
 .register-form button:hover {
   background-color: #e64a2e;
 }
+
+
 
 
 

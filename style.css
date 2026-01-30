@@ -107,7 +107,6 @@ section {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -180,6 +179,7 @@ footer {
 .register-form button:hover {
   background-color: #e64a2e;
 }
+
 
 
 

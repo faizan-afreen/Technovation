@@ -105,9 +105,8 @@ nav a:hover::after {
 section {
   padding: 5rem 2rem;
   text-align: center;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+  opacity: 1;
+  transform: none;
 }
 
 /* Fade in active class */
@@ -219,3 +218,4 @@ footer {
   padding: 1.5rem;
   margin-top: 4rem;
   }
+
